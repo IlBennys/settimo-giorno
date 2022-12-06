@@ -66,15 +66,15 @@ if (totalShoppingCarts > 50 || scontocarrello > 50) {
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
   Alla fine mostra il risultato in console.
 */
-const cambiamenti = {
-  p: 1,
-  o: 8,
-  l: 5,
-}
-if (cambiamenti === 8 > 5 > 1) {
-  console.log("ok")
+
+const p = 8
+const o = 5
+const l = 1
+
+if (p > o && o > l) {
+  console.log("1-5-8")
 } else {
-  console.log(8, 5, 1)
+  console.log("no ok")
 }
 
 /* ESERCIZIO 8
