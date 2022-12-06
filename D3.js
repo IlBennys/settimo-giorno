@@ -82,9 +82,9 @@ if (cambiamenti === 8 > 5 > 1) {
 */
 
 const k = 8
-if (typeof k === Number) {
-  console.log("E' un numero") /* PERCHE' NON E' NUMERO?*/
-} else if (typeof k !== Number) {
+if (typeof k === "number") {
+  console.log("E' un numero")
+} else if (typeof k !== "number") {
   console.log("E'una stringa")
 }
 
@@ -129,17 +129,20 @@ delete me.lastName
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
-/*console.log(me.pop())*/
+me.skills.pop()
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-const conarr = [{}]
+const conarr = []
 conarr.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 console.log(conarr)
+
 /* ESERCIZIO 15
+
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+conarr[9] = 100
+console.log(conarr)
