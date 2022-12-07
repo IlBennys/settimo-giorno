@@ -43,10 +43,14 @@ if (x === 8 || y === 8) {
 */
 
 const totalShoppingCart = 80
+const spedizione = 10
 if (totalShoppingCart > 50) {
-  console.log("Spedizione Gratuita Accettata")
+  console.log("Spedizione Gratuita Accettata ma paghi", totalShoppingCart)
 } else if (totalShoppingCart < 50) {
-  console.log("Costo Spedizione: 10€")
+  console.log(
+    "Costo Spedizione:10€, saldo totale:",
+    totalShoppingCart + spedizione
+  )
 }
 
 /* ESERCIZIO 6
@@ -56,9 +60,12 @@ if (totalShoppingCart > 50) {
 const totalShoppingCarts = 80
 const scontocarrello = 64
 if (totalShoppingCarts > 50 || scontocarrello > 50) {
-  console.log("Spedizione Gratuita Accettata")
+  console.log("Spedizione Gratuita Accettata ma paghi", scontocarrello)
 } else if (totalShoppingCarts < 50 || scontocarrello < 50) {
-  console.log("Costo Spedizione: 10€")
+  console.log(
+    "Costo Spedizione:10€, saldo totale:",
+    totalShoppingCarts + spedizione
+  )
 }
 
 /* ESERCIZIO 7
@@ -72,7 +79,7 @@ const o = 5
 const l = 1
 
 if (p > o && o > l) {
-  console.log("1-5-8")
+  console.log(p, o, l)
 } else {
   console.log("no ok")
 }
